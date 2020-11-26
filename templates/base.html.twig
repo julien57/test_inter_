@@ -2,11 +2,16 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Admin{% endblock %}</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
+        {{ include('inc/menu.html.twig') }}
+
         {% block body %}{% endblock %}
+
         {% block javascripts %}{% endblock %}
+
     </body>
 </html>
